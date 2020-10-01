@@ -1,6 +1,6 @@
 import 'package:bank_finder/data/moor_database.dart';
 import 'package:bank_finder/getit_service.dart';
-import 'package:clipboard_manager/clipboard_manager.dart';
+import 'package:clipboard/clipboard.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'custom_icon_button.dart';
@@ -105,7 +105,7 @@ class CustomExpandableListTile extends StatelessWidget {
                             final snackBar = SnackBar(
                                 duration: Duration(seconds: 2),
                                 content: Text('Text Copied to Clipboard!'));
-                            await ClipboardManager.copyToClipBoard(
+                            await FlutterClipboard.copy(
                                 bankrecord.toJsonString());
                             Scaffold.of(parentContext).showSnackBar(snackBar);
                           },

@@ -34,7 +34,7 @@ dependencies:
   json_annotation: ^3.1.0
   connectivity: ^0.4.9+3
   moor_flutter: ^3.1.0
-  clipboard_manager: ^0.0.4
+  clipboard: ^0.1.2+8
   get_it: ^5.0.1
   
 
