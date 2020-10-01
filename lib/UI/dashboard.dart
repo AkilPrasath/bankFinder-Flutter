@@ -95,7 +95,7 @@ class _DashBoardState extends State<DashBoard> {
         return AlertDialog(
           title: Row(
             children: [
-              Icon(Icons.account_balance_rounded),
+              Icon(Icons.account_balance),
               SizedBox(
                 width: 10,
               ),
@@ -431,7 +431,7 @@ class _DashBoardState extends State<DashBoard> {
                                         ),
                                       ),
                                       Icon(
-                                        Icons.favorite_rounded,
+                                        Icons.favorite,
                                         color: Colors.red,
                                         size: 15,
                                       ),
